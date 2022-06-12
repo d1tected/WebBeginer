@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items:center;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    margin-right: 27px;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.menu__link,
+.phone-number {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Play', sans-serif;
+
+    &:hover {
+        color: $redBtnHover;
+    }
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;    
+}
+
+.phone-number__icon-elem {
+    width: 12px;
+    height: 12px;
+    margin: 0 6px 0 0;
+}
+

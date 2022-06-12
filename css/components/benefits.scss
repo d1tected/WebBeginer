@@ -1,0 +1,85 @@
+$roundbenefit: 128px;
+
+.benefits {
+    display: flex;
+    justify-content: center;
+}
+
+.benefit {
+    width: 276px;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.benefits__item {
+    flex: 1;
+    position: relative;
+    padding: 0 8%;
+    
+    
+
+    &::before {
+        position: absolute;
+        top: calc(100%/4);
+        right: 0;
+        content: url(../../img/benefit/separator.svg);
+        transform: translateX(50%);
+    }
+
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child{
+        padding-right: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+
+.benefit__image {
+    margin-bottom:24px ;
+}
+
+.benefit__image-wrapper {
+    display: inline-block;
+    width: $roundbenefit;
+    height: $roundbenefit;
+    position: relative;
+    background: #F2F5F4;
+    border-radius:50%;
+    overflow: hidden;
+}
+
+.benefit__icon {
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.benefit__text {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+}
+
+.benefit__title {
+    color: $blackText;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.benefit__desc>p {
+    color: $greyText;
+}
+

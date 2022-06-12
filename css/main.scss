@@ -1,0 +1,33 @@
+
+
+
+// Размеры
+$containerWidth: 1100px;
+$baseFonts: 16px;
+
+// Цвета
+$redBtn: #E01F3D;
+$redBtnHover: #CA1B36;
+$blackText: #292929;
+$greyText: #666666;
+$greyBg: #F5F5F5;
+
+@import "layout";
+@import "components/hero";
+@import "components/header";
+@import "components/long-chars";
+@import "components/btn";
+@import "components/section";
+@import "components/benefits";
+@import "components/benefits-section";
+@import "components/reviews-section";
+
+@import "components/reviews";
+@import "components/interective-avatar";
+@import "components/form";
+@import "components/order-section";
+@import "components/radio";
+@import "components/fixed-menu";
+
+
+

@@ -1,0 +1,44 @@
+.fixed-menu {
+    position: fixed;
+    top:20%;
+    right: 3%;
+}
+
+.fixed-menu__item {
+    margin-bottom: 5px;
+
+    &--active {
+        .fixed-menu__link {
+            border-color: $redBtn;
+
+            &::before {
+                content: "";
+                background: $redBtn;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.fixed-menu__link {
+    width: 16px;
+    height: 16px;
+    border-radius:50%;
+    border: 1px solid transparent;
+    display: block;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius:50%;
+        background: $blackText;
+        opacity: .6;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

@@ -1,0 +1,38 @@
+.btn {
+    background-color: $redBtn;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-family: 'Play', sans-serif;
+    width: 163px;
+    height: 54px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+
+    &--default {
+        &:hover {
+            background-color: $redBtnHover;
+        }
+    }
+
+    &--theme {
+        
+        &--transparent {
+            background:none;
+            justify-content: start;
+            font-weight: normal;
+            background-color:none;
+        
+            &:hover {
+                color: #E01F3D;
+                background-color:none;
+                background:none;
+            }
+        }
+
+    }   
+}

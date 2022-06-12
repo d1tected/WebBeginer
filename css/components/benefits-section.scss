@@ -1,0 +1,15 @@
+.benefits-section {
+    position: relative;
+    &::after {
+        content:"";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: calc(34px/2) solid transparent;
+        border-right: calc(34px/2) solid transparent;
+        border-bottom: 34px solid #E01F3D;
+        transform: rotate(225deg);
+        bottom:calc(-34px/2);
+        left: 60px;
+    }
+}
