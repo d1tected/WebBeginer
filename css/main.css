@@ -98,7 +98,7 @@ img {
           justify-content: space-between;
   height: 100%;
   padding: 24px 0 52px 0;
-  background: url(../../img/hero-ellipse.png) right center/50% auto no-repeat;
+  background: url(../../../WebBeginer/img/hero-ellipse.png) right center/50% auto no-repeat;
 }
 
 .hero__title-section {
@@ -327,7 +327,7 @@ img {
   position: absolute;
   top: 25%;
   right: 0;
-  content: url(../../img/benefit/separator.svg);
+  content: url(../../../WebBeginer/img/benefit/separator.svg);
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
 }
@@ -577,7 +577,7 @@ img {
   border-radius: 5px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(../../img/order/check.svg) center center no-repeat;
+  background: url(../../../WebBeginer/img/order/check.svg) center center no-repeat;
 }
 
 .radio__elem {
