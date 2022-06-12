@@ -558,7 +558,7 @@ img {
 }
 
 .order-section {
-  background: url(../../img/order/order.png) no-repeat;
+  background-image: url(../../img/order/order.png);
   background-size: cover;
   color: #fff;
 }
