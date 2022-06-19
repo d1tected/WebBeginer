@@ -4,10 +4,10 @@
         content:'';
         position: absolute;
         background: #868686;
-        width: 35px;
-        height: 35px;
+        width: rem(35px);
+        height: rem(35px);
         border-radius: 50%;
-        bottom: calc(-35px/2);
-        left: 80px;
+        bottom: calc(rem(-35px)/2);
+        left: rem(80px);
     }
 }

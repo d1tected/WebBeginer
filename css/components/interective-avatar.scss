@@ -1,12 +1,12 @@
 .interective-avatar {
-    width: 74px;
-    height: 74px;
+    width: rem(74px);
+    height: rem(74px);
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    border: 6px solid transparent;
+    border: rem(6px) solid transparent;
     &--active {
-        border: 6px solid $redBtn;
+        border: rem(6px) solid $redBtn;
     }
 }
 

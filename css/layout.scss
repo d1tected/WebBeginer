@@ -3,21 +3,32 @@
 
 
 
-// Размеры
-$containerWidth: 1100px;
-$baseFonts: 16px;
+// // Размеры
+// $containerWidth: 1100px;
+// $baseFonts: 16px;
 
 // Цвета
 $red: #E01F3D;
 $blackText: #292929;
 
+html {
+    font-size: $baseFonts;
+
+    // @include tablets {
+    //     font-size: $baseFonts - 1px;
+    // }
+
+    // @include phones {
+    //     font-size: $baseFonts - 2px;
+    // }
+}
 
 html, body {
     height: 100%;
 }
 
 body {
-    font-size: $baseFonts;
+
     font-family: 'Alegreya Sans', sans-serif;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
@@ -28,13 +39,13 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
 }
 

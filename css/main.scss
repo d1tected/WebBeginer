@@ -5,6 +5,10 @@
 $containerWidth: 1100px;
 $baseFonts: 16px;
 
+// Breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 // Цвета
 $redBtn: #E01F3D;
 $redBtnHover: #CA1B36;
@@ -12,6 +16,8 @@ $blackText: #292929;
 $greyText: #666666;
 $greyBg: #F5F5F5;
 
+@import "media";
+@import "components/hamburger";
 @import "layout";
 @import "components/hero";
 @import "components/header";

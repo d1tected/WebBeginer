@@ -1,20 +1,23 @@
 .hero {
     background-color: $greyBg;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     color: $blackText;
     position: relative;
 
     &:before {
         position: absolute;
         content: "";
-        width: 46px;
-        height: 10px;
+        width: rem(46px);
+        height: rem(10px);
         background: #C4C4C4;
         transform: rotate(-45deg);
-        bottom: -5px;;
+        bottom: rem(-5px);;
         right: 10%;
 
+        @include tablets {
+            background: #858585;
+        }
     }
 }
 
@@ -23,28 +26,93 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 52px 0;
-    background: url(../../../WebBeginer/img/hero-ellipse.png) right center / 50% auto no-repeat;
+    padding: rem(24px) 0 rem(52px) 0;
+    background: url(../../img/hero-ellipse.png) right 5% center / 60% no-repeat;
+    // background-size: 70vh;
+
+    @include tablets {
+        background: none;
+        padding: rem(24px) 0 rem(0px) 0;
+
+    }
 }
 
 .hero__title-section {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+
+
+    @include tablets {
+        width: 100%;
+        text-align: center;
+        order: 3;
+        padding: 0 rem(40px);
+        line-height: rem(52px);
+        align-items: center;
+        
+
+        &::before {
+            content: "";
+            width: rem(323px);
+            height: rem(323px);
+            background: url(../../img/hero-ellipse--tablets.png) center center / contain no-repeat;
+            margin: 0 0 rem(48px) 0;
+            }
+    }
+}
+
+
+.hero__icons-section {
+
+    @include tablets {
+        order: 4;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(rem(-9999px));
+    }
 }
 
 .hero__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
+    line-height: 1.08;
     color: $blackText;
     font-family: 'Play', sans-serif;
     font-weight: bold;
     // width: 40%;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
+
+    @include tablets {
+        margin-bottom: rem(10px);
+    }
+
+    @include phones {
+        line-height: rem(36px);
+        font-size: rem(32px);
+        padding: 0 5%;
+    }
 }
 
 .hero__title-desc {
-    font-size: 21px;
-    padding-right: 25%;
-    margin-bottom: 36px;
+    font-size: rem(21px);
+    padding-right: 12%;
+    margin-bottom: rem(36px);
+    font-family: 'Play', sans-serif;
+
+    @include tablets {
+        padding: 0 23%;
+        line-height: rem(25px);
+        margin-bottom: rem(35px);
+    }
+
+    @include phones {
+        font-size: rem(18px);
+        padding: 0 2%;
+    }
+
 }
 
 
