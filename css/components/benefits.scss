@@ -47,7 +47,12 @@ $roundbenefit: rem(128px);
         position: absolute;
         top: calc(100%/4);
         right: 0;
+        // для git
+        content: url(../../../WebBeginer/img/benefit/separator.svg);
+
         content: url(../../img/benefit/separator.svg);
+
+
         transform: translateX(50%);
 
         @include tablets {

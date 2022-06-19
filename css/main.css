@@ -137,6 +137,7 @@ img {
   height: 100%;
   padding: 1.5rem 0 3.25rem 0;
   background: url(../../img/hero-ellipse.png) right 5% center/60% no-repeat;
+  background: url(../../../WebBeginer/img/hero-ellipse.png) right 5% center/60% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -174,6 +175,7 @@ img {
     width: 20.1875rem;
     height: 20.1875rem;
     background: url(../../img/hero-ellipse--tablets.png) center center/contain no-repeat;
+    background: url(../../../WebBeginer/img/hero-ellipse--tablets.png) center center/contain no-repeat;
     margin: 0 0 3rem 0;
   }
 }
@@ -569,6 +571,7 @@ img {
   position: absolute;
   top: 25%;
   right: 0;
+  content: url(../../../WebBeginer/img/benefit/separator.svg);
   content: url(../../img/benefit/separator.svg);
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
@@ -926,6 +929,7 @@ img {
 
 .order-section {
   background: url(../../img/order/order.png);
+  background: url(../../../WebBeginer/img/order/order.png);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -946,6 +950,7 @@ img {
 }
 .radio--checkbox .radio__visible::before {
   background: url(../../img/order/check.svg) center center no-repeat;
+  background: url(../../../WebBeginer/img/order/check.svg) center center no-repeat;
 }
 
 .radio__elem {
