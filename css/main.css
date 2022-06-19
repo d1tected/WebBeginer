@@ -836,7 +836,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 9.375rem;
+    padding: 0 18%;
   }
 }
 @media screen and (max-width: 480px) {
