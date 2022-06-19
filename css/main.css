@@ -571,7 +571,6 @@ img {
   position: absolute;
   top: 25%;
   right: 0;
-  content: url(../../img/benefit/separator.svg);
   content: url(../../../WebBeginer/img/benefit/separator.svg);
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
