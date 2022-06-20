@@ -609,6 +609,12 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
+@media screen and (max-width: 480px) {
+  .benefit__image-wrapper {
+    width: 50%;
+    height: 50%;
+  }
+}
 
 .benefit__icon {
   width: 4.25rem;
@@ -647,7 +653,6 @@ img {
 
 .benefits-section {
   position: relative;
-  min-width: 21.375rem;
 }
 .benefits-section::after {
   content: "";
