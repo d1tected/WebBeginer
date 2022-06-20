@@ -611,8 +611,8 @@ img {
 }
 @media screen and (max-width: 480px) {
   .benefit__image-wrapper {
-    width: 50%;
-    height: 50%;
+    width: 4.7058823529rem;
+    height: 4.7058823529rem;
   }
 }
 
@@ -625,7 +625,6 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-
 .benefit__text {
   text-align: center;
   font-family: "Play", sans-serif;
