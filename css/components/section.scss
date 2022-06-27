@@ -24,13 +24,18 @@
     @include phones {
         font-size: rem(32px);
     }
+
+    @include phones320 {
+        margin:  0 0 5% 0;
+        font-size: rem(28px);
+    }
     
 }
 
 .headline {
     text-align: center;
     font-family: 'Play', sans-serif;
-    padding: 0 23%;
+    padding: 0 18%;
 
     @include tablets {
         padding: 0 10%;
@@ -39,28 +44,39 @@
     @include phones {
         padding: 0 3%;
     }
-}
 
-.headline__title {
-    margin-bottom: rem(25px);
+    @include phones320 {
+        font-size: rem(24px);
+    }
 
-    @include phones {
-        font-size: rem(32px);
-        margin: 0 0 rem(11px) 0;
+    .headline__title {
+        margin-bottom: 1%;
+    
+        @include phones {
+            font-size: rem(32px);
+            margin: 0 0 rem(11px) 0;
+        }
+    }
+
+    .headline__subtitle {
+        color: $greyText;
+        margin-bottom: 12%;
+        // text-align: center;
+    
+        @include tablets {
+            padding: 0 2%;
+        }
+    
+        @include phones {
+            font-size: rem(16px);
+        }
+
+        @include phones320 {
+            margin: 0 0 8% 0;
+        }
+    
     }
 }
 
-.headline__subtitle {
-    color: $greyText;
-    margin-bottom: rem(62px);
-    // text-align: center;
 
-    @include tablets {
-        padding: 0 2%;
-    }
 
-    @include phones {
-        font-size: rem(16px);
-    }
-
-}

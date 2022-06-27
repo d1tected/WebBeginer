@@ -1,41 +1,53 @@
-$roundbenefit: rem(128px);
-
 .benefits {
     display: flex;
     justify-content: center;
+    padding: 0;
 
 
     @include phones {
         flex-direction: column;
         align-items:center;
      }
-}
 
-.benefit {
-    width: rem(276px);
-    display: flex;
-    justify-content: start;
-    align-items:center;
-    flex-direction: column;
-    text-align: center;
-
-    @include phones {
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-        padding: 0 rem(10px);
-        margin: 0 0 rem(31px);
-
-        &:last-child {
-            margin: 0;
+     .benefit {
+        width: rem(276px);
+        display: flex;
+        justify-content: start;
+        align-items:center;
+        flex-direction: column;
+        text-align: center;
+    
+        @include phones {
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            padding: 0 rem(10px);
+            margin: 0 0 5% 0;
+    
+            &:last-child {
+                margin: 0;
+            }
         }
+
+        @include phones320 {
+            padding: 0 5px;
+
+
+            .benefit__image {
+                display: none;
+                visibility: hidden;
+            }
+        }
+    
     }
 }
+
+
 
 .benefits__item {
     flex: 1;
     position: relative;
-    padding: 0 8%;
+    padding: 0 4%;
 
     @include tablets {
         padding: 0;
@@ -45,36 +57,38 @@ $roundbenefit: rem(128px);
 
     &::before {
         position: absolute;
-        top: calc(100%/4);
+        top: calc((100%/4) - 7%);
+        left: 50%;
         right: 0;
-
-
         content: url(../../img/benefit/separator.svg);
-
-        // для git
-        content: url(../../../WebBeginer/img/benefit/separator.svg);
-
-
         transform: translateX(50%);
 
         @include tablets {
             display: none;
-        }
+        } 
     }
-    
 
 
     &:first-child {
         padding-left: 0;
+
+        @include phones320 {
+            &:first-child {
+                padding: 0 0 0 5px;
+            }
+        }
     }
 
     &:last-child{
         padding-right: 0;
-
-        &::before {
+        
+        &::before{
             display: none;
         }
+
     }
+
+    
 }
 
 
@@ -84,35 +98,39 @@ $roundbenefit: rem(128px);
     @include phones {
         margin: 0 rem(12px) 0 0;
     }
+
 }
 
 .benefit__image-wrapper {
     display: inline-block;
-    width: $roundbenefit;
-    height: $roundbenefit;
+    width: rem(128px);
+    height: rem(128px);
     position: relative;
     background: #F2F5F4;
     border-radius:50%;
     overflow: hidden;
 
-    @include phones {
-        width:calc($roundbenefit/1.7);
-        height: calc($roundbenefit/1.7);
+   
+    // @include phones {
+    
+    // }
+
+    .benefit__icon{
+        width: rem(68px);
+        height: rem(68px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        @include phones {
+            width: 4.8571428571rem;
+            height: 4.8571428571rem;
+        }
     }
 }
 
-.benefit__icon {
-    width: rem(68px);
-    height: rem(68px);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-    @include phones {
-
-    }
-}
 
 
 .benefit__text {

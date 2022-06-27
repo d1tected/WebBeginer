@@ -14,13 +14,13 @@ $blackText: #292929;
 html {
     font-size: $baseFonts;
 
-    // @include tablets {
-    //     font-size: $baseFonts - 1px;
-    // }
+    @include tablets {
+        font-size: $baseFonts - 1px;
+    }
 
-    // @include phones {
-    //     font-size: $baseFonts - 2px;
-    // }
+    @include phones {
+        font-size: $baseFonts - 2px;
+    }
 }
 
 html, body {

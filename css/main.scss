@@ -2,12 +2,13 @@
 
 
 // Размеры
-$containerWidth: 1100px;
+$containerWidth: 915px;
 $baseFonts: 16px;
 
 // Breakpoints
 $tablets: 768px;
 $phones: 480px;
+$phones320: 320px;
 
 // Цвета
 $redBtn: #E01F3D;
@@ -34,6 +35,10 @@ $greyBg: #F5F5F5;
 @import "components/order-section";
 @import "components/radio";
 @import "components/fixed-menu";
+@import "components/slider";
+@import "components/product-section";
+@import "components/fullscreen-menu";
+@import "components/product-characteristics";
 
 
 
