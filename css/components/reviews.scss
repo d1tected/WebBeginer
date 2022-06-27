@@ -90,7 +90,8 @@
     }
 
     @include phones {
-        margin: 0 0 rem(12px) 0;
+        margin: 0 0 rem(6px) 0;
+        font-size: rem(24px);
     }
 
     @include phones320 {
@@ -105,6 +106,11 @@
     @include tablets {
         margin: 0 0 rem(16px) 0;
         font-size: rem(18px);
+    }
+
+    @include phones {
+        font-size: rem(16px);
+        line-height: 1.1;
     }
 
     @include phones320 {
