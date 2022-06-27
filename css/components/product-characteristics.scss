@@ -3,12 +3,14 @@
     width: rem(91px);
     position: relative;
     margin: 0 0 8% 0;
+    cursor: pointer;
 
     &:hover {
         .product__characteristics-block {
             display: block;
             visibility: visible;
             opacity: .8;
+            cursor: pointer;
         }
     }
 

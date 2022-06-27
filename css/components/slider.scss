@@ -49,8 +49,8 @@
             object-fit: cover;
 
             @include tablets {
-                max-height: rem(308px);
-                max-width: rem(308px);
+                max-height: rem(345px);
+                max-width: rem(345px);
                 margin: 0 0 7% 0;
                 padding: 0;
             }
@@ -184,8 +184,6 @@
             .product__price-btn {
 
                 
-
-
                 @include tablets {
                     margin: 0 5% 0 0;
                 }

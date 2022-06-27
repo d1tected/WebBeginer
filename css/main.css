@@ -202,7 +202,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  min-width: 30.5625rem;
+  min-height: 30.5625rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -210,6 +211,8 @@ img {
       -ms-flex-pack: end;
           justify-content: end;
   padding: 3% 0 0 0;
+  -webkit-transform: translate(5%, 5%);
+          transform: translate(5%, 5%);
 }
 @media screen and (max-width: 768px) {
   .hero__title-section .hero__title-section-image {
@@ -687,7 +690,7 @@ img {
   top: 18%;
   left: 50%;
   right: 0;
-  content: url(../../img/benefit/separator.svg);
+  content: url(../../../WebBeginer/img/benefit/separator.svg);
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
 }
@@ -785,6 +788,7 @@ img {
           transform: rotate(225deg);
   bottom: -1.0625rem;
   left: 3.75rem;
+  z-index: 100;
 }
 
 .reviews-section {
@@ -911,7 +915,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .reviews__title {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.625rem 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -932,6 +936,7 @@ img {
 @media screen and (max-width: 768px) {
   .reviews__text > p {
     margin: 0 0 1rem 0;
+    font-size: 1.125rem;
   }
 }
 @media screen and (max-width: 320px) {
@@ -943,6 +948,13 @@ img {
 .reviews__author {
   font-size: 18px;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .reviews__author {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000;
+  }
 }
 @media screen and (max-width: 320px) {
   .reviews__author {
@@ -1082,7 +1094,7 @@ img {
 }
 
 .order-section {
-  background: url(../../img/order/order.png);
+  background: url(../../../WebBeginer/img/order/order.png);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -1102,7 +1114,7 @@ img {
   border-radius: 0.3125rem;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(../../img/order/check.svg) center center no-repeat;
+  background: url(../../../WebBeginer/img/order/check.svg) center center no-repeat;
 }
 
 .radio__elem {
@@ -1290,8 +1302,8 @@ img {
 }
 @media screen and (max-width: 768px) {
   .product__container .product__col .product_col-image {
-    max-height: 19.25rem;
-    max-width: 19.25rem;
+    max-height: 21.5625rem;
+    max-width: 21.5625rem;
     margin: 0 0 7% 0;
     padding: 0;
   }
@@ -1568,11 +1580,13 @@ img {
   width: 5.6875rem;
   position: relative;
   margin: 0 0 8% 0;
+  cursor: pointer;
 }
 .product__characteristics:hover .product__characteristics-block {
   display: block;
   visibility: visible;
   opacity: 0.8;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .product__characteristics {

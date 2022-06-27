@@ -86,7 +86,7 @@
     margin-bottom: rem(22px);
 
     @include tablets {
-        margin: 0 0 rem(16px) 0;
+        margin: 0 0 rem(26px) 0;
     }
 
     @include phones {
@@ -104,6 +104,7 @@
 
     @include tablets {
         margin: 0 0 rem(16px) 0;
+        font-size: rem(18px);
     }
 
     @include phones320 {
@@ -114,6 +115,12 @@
 .reviews__author {
     font-size: 18px;
     font-weight: bold;
+
+    @include tablets {
+        font-size: rem(20px);
+        font-weight: 400;
+        color: #000;
+    }
 
     @include phones320 {
         font-size: rem(16px);

@@ -12,5 +12,6 @@
         transform: rotate(225deg);
         bottom:calc(rem(-34px)/2);
         left: rem(60px);
+        z-index: 100;
     }
 }
