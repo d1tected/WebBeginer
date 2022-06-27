@@ -151,6 +151,10 @@
     @include phones {
         margin: 0 0 rem(6px) 0;
     }
+
+    @include phones320 {
+        text-transform: uppercase;
+    }
 }
 
 .benefit__desc>p {

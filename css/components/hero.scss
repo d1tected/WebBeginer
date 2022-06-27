@@ -28,9 +28,6 @@
     justify-content: space-between;
     height: 100%;
     padding: rem(24px) 0 rem(52px) 0;
-    // background: url(../../img/hero-ellipse.png) right 5% center / 60% no-repeat;
-    // для git
-    // background: url(../../../WebBeginer/img/hero-ellipse.png) right 5% center / 60% no-repeat;
 
     @include tablets {
         background: none;
@@ -77,7 +74,6 @@
     .hero__title-section-image {
         display: flex;
         min-width: rem(489px);
-        min-height: rem(489px);
         align-items: center;
         justify-content: end;
         padding: 3% 0 0 0;
@@ -87,12 +83,17 @@
         @include tablets {
             align-items: center;
             justify-content: center;
+            transform: none;
+
         }
 
         @include phones {
             padding: 2% 3%;
             max-width: none;
             max-height: none;
+            transform: none;
+            min-height: auto;
+            min-width: auto;
         }
 
         a img{
@@ -101,8 +102,7 @@
             @include tablets {
                 justify-content: center;
                 align-items:center;
-                max-width: rem(325px);
-                max-height: rem(325px);
+                max-width: 43vw;
                 margin: 0 0 17% 0;
             }
 
