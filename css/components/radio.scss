@@ -9,9 +9,9 @@
             border-radius: rem(5px) ;
 
             &::before {
-                background: url(../../img/order/check.svg) center center no-repeat; //local
+                // background: url(../../img/order/check.svg) center center no-repeat; //local
                 // для git
-                // background: url(../../../WebBeginer/img/order/check.svg) center center no-repeat;
+                background: url(../../../WebBeginer/img/order/check.svg) center center no-repeat;
             }
         }
 

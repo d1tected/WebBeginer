@@ -704,7 +704,7 @@ img {
   top: 18%;
   left: 50%;
   right: 0;
-  content: url(../../img/benefit/separator.svg);
+  content: url(../../../WebBeginer/img/benefit/separator.svg);
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
 }
@@ -1158,7 +1158,7 @@ img {
 }
 
 .order-section {
-  background: url(../../img/order/order.png);
+  background: url(../../../WebBeginer/img/order/order.png);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -1178,7 +1178,7 @@ img {
   border-radius: 0.3125rem;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(../../img/order/check.svg) center center no-repeat;
+  background: url(../../../WebBeginer/img/order/check.svg) center center no-repeat;
 }
 
 .radio__elem {
