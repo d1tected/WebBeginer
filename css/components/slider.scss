@@ -1,23 +1,43 @@
 .products-slider {
     position: relative;
+    padding: 0 3% 0 0;
+
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
 
     .product-slider__arrows {
         display: inline-flex;
         position: absolute;
         top:50%;
-        transform: translateY(-50%);
-        width: 100%;
+        transform: translate(-3%,-50%);
+        width: 103%;
         justify-content: space-between;
-        padding: 0 6%;
+        // padding: 0 6%;
         user-select: none;
+        z-index: 100;
+        padding: 0 3%;
+
 
         @include tablets {
-            padding: 0 21%;
+            padding: 10%;
             top:25%;
+
+            // .product-slider__arrow {
+            //     z-index: 100;
+            // }
         }
 
         @include phones {
             padding: 0 1%;
+            top:23%;
+        }
+
+        @include phones320 {
+            padding: 0 2%;
             top:23%;
         }
     }
@@ -34,7 +54,7 @@
 
     .product__col {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         @include tablets {
             justify-content: center;
@@ -45,8 +65,10 @@
         .product_col-image {
             max-height: rem(452px);
             max-width: rem(452px);
-            padding: 0 0 0 8%;
+            padding: 5% 0 0 2%;
             object-fit: cover;
+            display: flex;
+            align-items: center;
 
             @include tablets {
                 max-height: rem(345px);
@@ -70,7 +92,7 @@
         .product_col-summary {
             display: flex;
             flex-direction: column;
-            width: 40%;
+            width: 45%;
             justify-content: center;
 
             @include tablets {
@@ -89,7 +111,7 @@
                 text-transform: uppercase;
                 font-weight: bold;
                 line-height: 1.1;
-                margin: 0 0 4% 0;
+                margin: 0 0 6% 0;
 
                 @include tablets {
                     font-size: rem(32px);
@@ -105,7 +127,7 @@
                 color: $greyText;
                 width: 84%; 
                 line-height: 1.1;
-                margin: 0 0 5% 0;
+                margin: 0 0 6% 0;
 
                 @include tablets {
                     width: 90%;
@@ -164,7 +186,7 @@
                     }
 
                     .product__values-col {
-                        width: 39%;
+                        width: 41%;
 
                         @include tablets {
                             width: 20%;

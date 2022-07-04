@@ -9,11 +9,12 @@
     @include tablets {
         display: inline-flex;
     }
+
+    .hamburger__plank {
+        display: block;
+        background: $blackText;
+        height: 4px;
+        border-radius: 10px;
+    }
 }
 
-.hamburger__plank {
-    display: block;
-    background: $blackText;
-    height: 4px;
-    border-radius: 10px;
-}
