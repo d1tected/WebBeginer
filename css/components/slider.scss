@@ -13,8 +13,8 @@
         display: inline-flex;
         position: absolute;
         top:50%;
-        transform: translate(-3%,-50%);
-        width: 103%;
+        transform: translate(-5%,-50%);
+        width: 106%;
         justify-content: space-between;
         // padding: 0 6%;
         user-select: none;
@@ -23,7 +23,7 @@
 
 
         @include tablets {
-            padding: 10%;
+            padding: 0 13%;
             top:25%;
 
             // .product-slider__arrow {
@@ -92,7 +92,7 @@
         .product_col-summary {
             display: flex;
             flex-direction: column;
-            width: 45%;
+            width: 46%;
             justify-content: center;
 
             @include tablets {
